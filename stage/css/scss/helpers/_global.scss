@@ -1,0 +1,131 @@
+body {
+    overflow-x: hidden;
+    color: $text-dark;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding-top: $header-height;
+}
+
+button, input, textarea, select {
+    &:focus {
+        outline: none !important;
+    }
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.page {
+    overflow: hidden;
+
+    .main-header {
+        width: calc(100% - #{$nav-width});
+        left: $nav-width;
+        transition: all .5s;
+
+        @media(max-width: 767px) {
+            left: 0;
+            width: 100%;
+        }
+
+        &.active {
+            width: 100%;
+            left: 0;
+
+            @media(max-width: 767px) {
+                left: $nav-width;
+                width: calc(100% - #{$nav-width});
+            }
+        }
+
+    }
+
+    nav {
+        width: $nav-width;
+        float: left;
+        transition: transform .5s;
+
+        @media(max-width: 767px) {
+            transform: translateX(-100%);
+        }
+
+        &.active {
+            transform: translateX(-100%);
+
+            @media(max-width: 767px) {
+                transform: translateX(0);
+            }
+        }
+        
+    }
+
+    .page-content {
+        width: calc(100% - #{$nav-width});
+        float: right;
+        min-height: 100vh;
+        background: $light-bg;
+        transition: all .5s;
+
+        @media(max-width: 767px) {
+            width: 100%;
+        }
+
+        &.active {
+            width: 100%;
+
+            @media(max-width: 767px) {
+                transform: translateX(#{$nav-width});
+            }
+        }
+
+    }
+
+}
+
+.padding-sec {
+    padding-top: $large;
+    padding-bottom: $large;
+}
+
+.carousel-cell {
+    width: calc(100% / 3);
+    margin-right: $small;
+    padding: $small;
+
+    @media (max-width: 991px) {
+        width: calc(100% / 2);
+    }
+
+    @media (max-width: 767px) {
+        width: calc(100% / 1);
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.flickity-button  {
+    border-radius: 0;
+    background: $light-bg;
+    width: 55px;
+    height: 50px;
+
+    svg {
+        width: 50% !important;
+        height: 50% !important;
+        color: $text-dark;
+    }
+
+
+    &.previous {
+        left: 0;
+        border-radius: 0 50% 50% 0;
+    }
+    &.next {
+        right: 0;
+        border-radius: 50% 0 0 50%;
+    }
+}

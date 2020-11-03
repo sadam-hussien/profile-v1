@@ -1,0 +1,55 @@
+- var sectitle = "about me";
+
+-
+    var stats = [
+        {
+            "class": "first-stats",
+            "title": "project done",
+            "icon": "checkmark-done-outline",
+            "num": "8"
+        },
+        {
+            "class": "second-stats",
+            "title": "truested clients",
+            "icon": "heart-half-outline",
+            "num": "6"
+        },
+        {
+            "class": "third-stats",
+            "title": "experience",
+            "icon": "code-working-outline",
+            "num": "2"
+        }
+    ];
+
+section.about.position-relative.padding-sec
+    .container
+
+        // start content
+        .content
+            .row.justify-content-center
+
+                // start info
+                .col-md-10.col-lg-8
+                    .info
+                        h3.top-text.text-uppercase(data-aos="fade-right") i'm 
+                            span mahmoud hussien
+                        h5.text(data-aos="fade-up") A front-end developer web living in Egypt, I studied at the Technical Institute of Health in 2019, and I am currently working as a freelancer. And I have 21 years old and 2 years of experience. I specialize in the development of front facades.
+
+                        a.my-btn(href="https://drive.google.com/file/d/1qYxGLBKeSDuaJwJFOuX5IbJM3XfpuYIu/view?usp=sharing" target="_blank" data-aos="fade-left") Get CV
+
+                // ==== end info
+
+            .stats
+                .stats-carousel
+                    each stat in stats
+                        .carousel-cell
+                            .single-stats.d-flex.align-items-center(class=stat.class )
+                                .icon
+                                    <ion-icon name=#{stat.icon}></ion-icon>
+                                
+                                .info-box
+                                    .num <span class="plus">+</span> <span>#{stat.num}</span>
+                                    h5.stats-title=stat.title
+
+        // ==== end content         

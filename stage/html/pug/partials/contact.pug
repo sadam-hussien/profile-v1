@@ -1,0 +1,59 @@
+- var sectitle = "contact me";
+-
+    var infos = [
+
+        {
+            "title": "phone",
+            "icon": "call-outline",
+            "result": "01159258110",
+        },
+        {
+            "title": "email",
+            "icon": "mail-outline",
+            "result": "m.hus.dev@gmail.com",
+        },
+        {
+            "title": "address",
+            "icon": "location-outline",
+            "result": "Egypt - Elminya - Maghagha",
+        },
+
+    ];
+
+section.contact.position-relative.padding-sec
+    // bg
+    .bg 
+        <ion-icon class="icon roc" name="rocket-outline"></ion-icon>
+
+    // === end bg
+
+    .container
+
+        // start title
+        include ../components/title
+        // ==== end title
+
+        // content
+        .content
+            .row
+                
+                // info
+                .col-12
+                    .info
+                        .row
+                            each info in infos
+                                .col-md-12.col-lg-6
+                                    // info box
+                                    .info-box(data-aos="fade-left")
+                                        .head-area.d-flex.align-items-center
+                                            .icon
+                                                <ion-icon name=#{info.icon}></ion-icon>
+                                            h4.text=info.title
+
+                                        .body-area
+                                            h5.result=info.result
+                                    // === end info box
+                            .col-12
+                                include ../components/socials
+
+                // ==== end info

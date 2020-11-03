@@ -1,0 +1,22 @@
+.title {
+    margin-bottom: $large;
+    padding-left: $medium;
+    position: relative;
+    .text {
+        color: $text-dark;
+        // color: $main-color;
+        display: inline-flex;
+        padding: 0;
+        letter-spacing: 1px;       
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background: $second-color;
+    }
+}

@@ -1,0 +1,69 @@
+.contact {
+    overflow: hidden;
+
+    // start bg
+    .bg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(0, -30%);
+        font-size: 20rem;
+        color: rgba($text-dark, .2);
+    }
+    // ==== end bg
+
+    .info {
+
+        // start info-box
+        .info-box {
+            padding: $medium;
+            background: $white;
+            margin-bottom: $medium;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba($dark, .2);
+
+            // start .head-area
+            .head-area {
+                margin-bottom: $small;
+                .icon {
+                    width: $yaxis;
+                    height: $yaxis;
+                    background: $main-color;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 25px;
+                    color: $white;
+                }
+                .text {
+                    margin-left: $small;
+                    margin-bottom: 0;
+                    text-transform: uppercase;
+                }
+            }
+            // === end .head-area
+
+            // start body-area
+            .body-area {
+                padding-left: $yaxis + $small;
+                position: relative;
+                .result {
+                    margin-bottom: 0;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background: rgba($text-dark, .3);
+                    width: $yaxis;
+                    height: 2px;
+                }
+            }
+            // ===== end body-area
+        }
+        // ==== end info-box
+
+    }
+}

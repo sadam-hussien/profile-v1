@@ -1,0 +1,22 @@
+// vars
+@import "./scss/vars/vars";
+
+// helpers
+@import "./scss/helpers/global";
+@import "./scss/helpers/my-btn";
+@import "./scss/helpers/title";
+@import "./scss/helpers/socials";
+
+// templates
+@import "./scss/templates/header";
+@import "./scss/templates/navbar";
+
+// components
+@import "./scss/components/intro";
+@import "./scss/components/about";
+@import "./scss/components/skills";
+@import "./scss/components/portfolio";
+@import "./scss/components/contact";
+
+// themes
+@import "./scss/themes/dark";

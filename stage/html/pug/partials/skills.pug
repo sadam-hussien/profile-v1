@@ -1,0 +1,95 @@
+- var sectitle = "my skills";
+
+-
+    var skills = [
+        {
+            "icon": "html5.svg",
+            "title": "html5",
+            "class": "html5",
+        },
+        {
+            "icon": "css.svg",
+            "title": "css3",
+            "class": "css3",
+        },
+        {
+            "icon": "javascript.svg",
+            "title": "javascript",
+            "class": "javascript",
+        },
+        {
+            "icon": "bootstrap.svg",
+            "title": "bootstrap",
+            "class": "bootstrap",
+        },
+        {
+            "icon": "vuejs.svg",
+            "title": "vuejs",
+            "class": "vuejs",
+        },
+        {
+            "icon": "sass.svg",
+            "title": "sass",
+            "class": "sass",
+        },
+        {
+            "noicon": "checkmark-done-outline",
+            "title": "pug",
+            "class": "pug",
+        },
+        {
+            "icon": "wordpress.svg",
+            "title": "wordpress",
+            "class": "wordpress",
+        },
+        {
+            "basic": "basics",
+            "icon": "php.svg",
+            "title": "php",
+            "class": "php",
+        },
+        {
+            "basic": "basics",
+            "icon": "mysql.svg",
+            "title": "mysql",
+            "class": "mysql",
+        },
+        {
+            "icon": "git.svg",
+            "title": "git",
+            "class": "git",
+        },
+        {
+            "icon": "github.svg",
+            "title": "github",
+            "class": "github",
+        },
+        {
+            "icon": "gulp.svg",
+            "title": "gulp",
+            "class": "gulp",
+        },
+    ];
+
+- var skillsrc = "./imgs/skills/";
+
+
+section.skills.padding-sec.position-relative
+    .container
+    
+        // start title
+        include ../components/title
+        // ==== end title  
+
+        .row
+            each skill in skills
+                .col-sm-6.col-md-4.col-lg-3(data-aos="fade-right" data-aos-anchor-placement="top-bottom")
+                    .single-skill(class=skill.class).d-flex.align-items-center.position-relative
+                        if(skill.icon)
+                            img(src=skillsrc + skill.icon, alt=skill.title, class="img-fluid sk-ico")
+                        else    
+                            <ion-icon name=#{skill.noicon} class="skill-icon sk-ico"></ion-icon>
+                        .box-info   
+                            .skill-title=skill.title
+                        if(skill.basic)
+                            span.position-absolute.basic-skill=skill.basic

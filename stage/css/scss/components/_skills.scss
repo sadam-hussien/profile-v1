@@ -1,0 +1,120 @@
+.skills {
+    .single-skill {
+        background: $white;
+        padding: $large $medium;
+        margin-bottom: $medium;
+        box-shadow: 0 0 10px rgba($dark, .15);
+        border-radius: 10px;
+        transition: all .5s;
+
+        img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .sk-ico {
+
+        }
+
+        &.pug {
+            height: calc(100% - #{$medium});
+            .skill-icon {
+                font-size: 45px;
+            }
+        }
+
+        &.html5 {
+            .skill-title {
+                color: #FF4700;
+            }
+        }
+
+        &.css3 {
+            .skill-title {
+                color: #0096EE;
+            }
+        }
+
+        &.javascript {
+            .skill-title {
+                color: #FEDE23;
+            }
+        }
+
+        &.bootstrap {
+            .skill-title {
+                color: #5A3C7B;
+            }
+        }
+
+        &.vuejs {
+            .skill-title {
+                color: #00BB88;
+            }
+        }
+
+        &.sass {
+            .skill-title {
+                color: #E986B0;
+            }
+        }
+
+        &.wordpress {
+            .skill-title {
+                color: #00779C;
+            }
+        }
+
+        &.php {
+            .skill-title {
+                color: #757BB2;
+            }
+        }
+
+        &.mysql {
+            .skill-title {
+                color: #3F89A7;
+            }
+        }
+
+        &.git {
+            .skill-title {
+                color: #F53E20;
+            }
+        }
+
+        &.github {
+            .skill-title {
+                color: #161614;
+            }
+        }
+
+        &.gulp {
+            .skill-title {
+                color: #FF393B;
+            }
+        }
+
+        .box-info {
+            padding-left: $medium;
+            .skill-title {
+                font-size: 20px;
+                text-transform: capitalize;
+            }
+        }
+
+        .basic-skill {
+            top: $small;
+            right: $small;
+            background: $second-color;
+            color: $white;
+            padding: 3px 8px;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}

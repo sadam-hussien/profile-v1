@@ -1,0 +1,82 @@
+.intro {
+    min-height: calc(100vh - #{$header-height});
+    position: relative;
+    overflow: hidden;
+
+    // start dots-img
+    .dots-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        object-fit: cover;
+        opacity: .1;
+    }
+    // ==== end dots-img    
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    // start intro-content
+    .intro-content {
+
+        // start head-area
+        .head-area {
+
+            // start iam
+            .iam {
+                color: $main-color;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-bottom: 5px;
+            }
+            // ==== end iam 
+
+            // start job
+            .job {
+                letter-spacing: 1px;
+                text-transform: capitalize;
+            }
+            // ==== ednd job
+
+        }
+        // ==== end head-area
+
+        // start body-area
+        .body-area {
+
+            // start hi-text
+            .hi-text {
+                text-transform: uppercase;
+                color: $main-color;
+                font-weight: bold;
+                margin-left: -14px;
+                line-height: .9;
+                margin-bottom: $medium;
+                letter-spacing: 20px;
+
+            }
+            // ==== end hi-text
+
+        }
+        // ===== end body-area
+
+        // start footer-area
+        .footer-area {
+            .go-to-portfolio {
+                // border: 1px solid $text-dark;
+                background: none;
+                color: $text-dark;
+                margin-left: $medium;
+            }
+        }
+        // ==== end footer-area
+
+    }
+    // ==== end intro-content
+
+}

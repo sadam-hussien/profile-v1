@@ -1,0 +1,77 @@
+.about {
+
+    // start info
+    .info {
+
+        // start top-text
+        .top-text {
+            letter-spacing: 1px;
+            margin-bottom: $small;
+            span {
+                color: $main-color;
+            }
+        }
+        // ==== end top-text
+
+        // start text
+        .text {
+            line-height: 1.7;
+            margin-bottom: $large;
+            letter-spacing: 1px;
+        }
+        // ==== end text
+
+    }
+    // === end info
+
+    // start stats
+    .stats {
+        margin-top: $large;
+
+        // start single-stats
+        .single-stats {
+            background-color: $white;
+            box-shadow: 0 0 10px rgba($dark, .15);
+            padding: $large $medium;
+            border-radius: 10px;
+            
+            // start icon
+            .icon {
+                font-size: 40px;
+                color: $main-color;
+            }
+            // ==== end icon
+
+            // start .info-box
+            .info-box {
+                margin-left: $medium;
+                padding-left: $medium;
+                border-left: 2px solid rgba($text-dark, .2);
+
+                // start num
+                .num {
+                    font-size: 40px;
+                    font-weight: bold;
+                    color: $main-color;
+                    // margin-bottom: 0;
+                    margin-top: -10px;
+                }
+                // ==== end num
+
+                // start stats-title
+                .stats-title {
+                    margin-bottom: 0;
+                    text-transform: capitalize;
+                }
+                // ==== edn stats-title
+
+            }
+            // ===== 3nd .info-box
+
+        }
+        // ==== end single-stats
+
+    }
+    // ==== end stats
+
+}

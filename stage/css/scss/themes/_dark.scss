@@ -1,0 +1,112 @@
+.main-header.dark-theme-header {
+    background: $dark-mode-el;
+
+    .toggle-navbar {
+        span {
+            background: $sub-white;
+        }
+    }
+
+    .full-screen {
+        color: $sub-white;
+    }
+
+}
+
+.dark-theme-site {
+    background: $dark-bg !important;
+
+    .title {
+        .text {
+            color: $white;
+        }
+    }
+
+    // start intro
+    .intro .intro-content {
+
+        .head-area .job {
+            color: $white;
+        }   
+        .footer-area .go-to-portfolio {
+            color: $sub-white;
+        }
+    }
+    // ==== end intro
+
+    // start about
+    .about {
+        .info {
+            .top-text {
+                color: $white;
+            }
+            .text {
+                color: $sub-white;
+            }
+        }
+
+        .stats .single-stats {
+            background: $dark-mode-el;
+
+            .stats-title {
+                color: $white;
+            }
+
+            .icon {
+                color: $white;
+            }
+
+            .info-box {
+                border-left-color: rgba($sub-white, .2);
+            }
+        }
+    }
+    // ==== end about
+
+    // start skills 
+    .skills {
+        .single-skill {
+            background: $dark-mode-el;
+        }
+    }
+    // ==== end skills 
+
+    // start portfolio
+    .portfolio {
+        .projects-title {
+            background: $dark-mode-el;
+            color: $sub-white;
+        }
+    }
+    // ==== end portfolio
+
+    // start contact
+    .contact {
+        .info-box {
+            background: $dark-mode-el;
+
+            .text {
+                color: $white;
+            }
+
+            .body-area {
+                &::before {
+                    background: rgba($sub-white, .3);
+                }
+            }
+
+            .result {
+                color: $sub-white;
+            }
+        }
+    }
+    // ==== end contact
+
+    .flickity-button {
+        background: $dark-bg;
+        svg {
+            color: $white;
+        }
+    }
+
+}

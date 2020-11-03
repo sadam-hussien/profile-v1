@@ -1,0 +1,32 @@
+header.main-header.d-flex.align-items-center.fixed-top
+    .container-fluid.d-flex.align-items-center.justify-content-between
+
+        // start left-content
+        .left-content
+
+            // start toggle-navbar
+            button.toggle-navbar.p-0.border-0
+                span.d-block
+                span.d-block
+                span.d-block
+            // ==== end toggle-navbar
+
+        // ==== end left-content
+
+        // start right-content
+        .right-content.d-flex.align-items-center
+
+            // start full-screen
+            button.full-screen.border-0.p-0
+                <ion-icon name="resize-outline" class="full-screen-icon"></ion-icon>
+            // ===== end full-screen
+
+            // start mode
+            .mode
+                button.theme-mode.my-btn
+                    <ion-icon name="moon-outline" class="icon-mode"></ion-icon>
+                    span dark
+
+            // ==== end mode
+
+        // ===== end right-content

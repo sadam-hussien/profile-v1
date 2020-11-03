@@ -1,0 +1,89 @@
+.portfolio {
+
+    // start .single-project
+    .single-project {
+        margin-bottom: $large;
+
+        &.wordpress-projects {
+            margin-bottom: 0;
+        }
+
+        // start projects-title
+        .project-title-wrapper {
+            overflow: hidden;
+            margin-bottom: $medium;
+        }
+        .projects-title {
+            margin-bottom: 0;
+            padding: 4px $small;
+            background: $white;
+            color: $text-dark;
+            border-radius: 25px;
+            box-shadow: 0 0 10px rgba($dark, .1);
+        }
+        // ==== end projects-title
+
+        // start my-single-work
+        .my-single-work {
+            position: relative;
+            height: 260px;
+            box-shadow: 1px 1px 10px rgba($dark, .4);
+
+            // start single-work-body
+            .single-work-body {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to right bottom, rgba($main-color, .8), rgba($second-color, .8));
+                padding: $medium;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: transform .5s;
+                
+                .text {
+                    margin-bottom: 0;
+                    text-transform: capitalize;
+                    color: $white;
+                    margin-bottom: $medium;
+                }
+                
+            }
+            // ==== end single-work-body
+
+            .my-btn {
+                background: $white;
+                color: $main-color;
+
+                .icon {
+                    margin-left: $small;
+                }
+            }
+
+            &:hover {
+                .single-work-body {
+                    transform: scaleX(1);
+                }
+            }
+        }
+        // ==== end my-single-work
+
+        .carousel-cell {
+            min-height: 260px;
+
+            &.is-selected {
+                .single-work-body {
+                    transform: scaleX(1);
+                }
+            }
+        }
+
+    }
+    // ==== end 
+
+}

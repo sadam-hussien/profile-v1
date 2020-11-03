@@ -1,0 +1,59 @@
+.main-header {
+    height: $header-height;
+    background: $white;
+    box-shadow: 0 1px 10px rgba($dark, .04);
+
+    // start toggle-navbar
+    .toggle-navbar {
+        background: transparent;
+        $w: 10px;
+
+        span {
+            height: 2px;
+            background: $text-dark;
+            transition: width .5s;
+            &:first-child {
+                width: $w;
+            }
+            
+            &:nth-child(2) {
+                width: $w * 2;
+            }
+            
+            &:last-child {
+                width: $w * 3;
+            }
+
+            &:not(:last-of-type) {
+                margin-bottom: 5px;
+            }
+
+            
+        }
+        &:hover, &.active {
+            span {
+                width: $w * 3;
+            }
+        }
+    }
+    // ===== end toggle-navbar
+
+    // start full-screen
+    .full-screen {
+        margin-right: $medium;
+        background: transparent;
+        font-size: 20px;
+        margin-bottom: -3px;
+    }
+    // ===== end full-screen
+
+    // start theme-mode
+    .theme-mode {
+        border: none;
+        text-transform: capitalize;
+        .icon-mode {
+            margin-right: $small;
+        }
+    }
+    // ===== end theme-mode
+}
